@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+        <h1>In web design,what does CSS stand for?</h1>
+    </div>
+         <div class="ans1" onclick="red1()">
+        <button class="wrong1"onclick="red1">A</button><h2>counter strik source</h2>
+    </div>
+    <div class="ans2" onclick="red2()">
+        <button class="wrong2"onclick="red2">B</button><h2>corrective style sheet</h2>
+    </div>
+    <div class="ans3" onclick="red3()">
+        <button class="wrong3"onclick="red3">C</button><h2>computer style sheet</h2>
+    </div>
+    <div class="ans4" onclick="green()">
+        <button class="answer">D</button><h2>cascading style sheet</h2>
+    </div>
+    </div>
+    <script>
+        var colorchange=document.getElementsByClassName("container");
+        function green(){
+            document.getElementsByClassName("ans4")[0].style.backgroundColor="rgb(40, 240, 40)";
+            document.getElementsByClassName("answer")[0].style.backgroundColor="rgb(40, 240, 40)";
+        }
+        function red3(){
+            document.getElementsByClassName("ans3")[0].style.backgroundColor="rgb(254, 29, 29)";
+            document.getElementsByClassName("wrong3")[0].style.backgroundColor="rgb(254, 29, 29)";
+        }
+        function red2(){
+            document.getElementsByClassName("ans2")[0].style.backgroundColor="rgb(254, 29, 29)";
+            document.getElementsByClassName("wrong2")[0].style.backgroundColor="rgb(254, 29, 29)";
+        }
+        function red1(){
+            document.getElementsByClassName("ans1")[0].style.backgroundColor="rgb(254, 29, 29)";
+            document.getElementsByClassName("wrong1")[0].style.backgroundColor="rgb(254, 29, 29)";
+        }
+</script>
+
+</body>
+</html>
